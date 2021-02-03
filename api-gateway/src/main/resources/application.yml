@@ -1,0 +1,20 @@
+server:
+  port: 9002
+
+spring:
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+      # 用户中心服务
+      - id: user-center-service
+        uri: lb://user-center-service/
+        predicates:
+        - Path=/user/**
+
+      # 分享中心服务
+      - id: share-center-service
+        uri: lb://share-center-service/
+        predicates:
+        - Path=/share/**
+

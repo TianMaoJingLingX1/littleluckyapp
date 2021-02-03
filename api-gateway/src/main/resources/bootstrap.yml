@@ -3,7 +3,7 @@ spring:
     active: dev
 
   application:
-    name: gateway-center-service
+    name: api-gateway-service
 
   cloud:
     nacos:
@@ -19,13 +19,3 @@ spring:
         # ${prefix}-${profiles.active}.${extension}
         prefix: nacos-provider
 
-    gateway:
-#      discovery:
-#        locator:
-#          enabled: true
-      routes:
-        - id: share-center-router
-          order: 1
-          predicates:
-            - Path=/api-share-route
-          uri: https://www.cnblogs.com/snail90/p/11719573.html
