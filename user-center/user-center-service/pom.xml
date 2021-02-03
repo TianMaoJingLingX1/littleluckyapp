@@ -20,6 +20,7 @@
         <dependency>
             <groupId>com.baihuionline</groupId>
             <artifactId>user-center-client</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

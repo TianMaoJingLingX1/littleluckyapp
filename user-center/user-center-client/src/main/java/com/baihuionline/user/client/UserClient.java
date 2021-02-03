@@ -11,6 +11,6 @@ import org.springframework.cloud.openfeign.FeignClient;
  * @date :2021年02月03日 00时44分
  * Note: 真正的大师，永远怀着一颗学徒的心。
  */
-@FeignClient(value = "user-center", fallback = UserClientFallback.class)
+@FeignClient(value = "user-center-service", fallback = UserClientFallback.class)
 public interface UserClient extends IUserApi {
 }

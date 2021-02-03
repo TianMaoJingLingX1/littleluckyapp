@@ -5,6 +5,7 @@
     <modules>
         <module>user-center</module>
         <module>share-center</module>
+        <module>gateway-center</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -54,6 +55,7 @@
                 <scope>import</scope>
             </dependency>
 
+            <!--健康检查-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-actuator</artifactId>
@@ -95,7 +97,6 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-
 
         <!--Nacos服务注册与发现-->
         <dependency>
